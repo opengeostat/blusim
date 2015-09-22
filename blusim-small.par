@@ -1,0 +1,34 @@
+                  Parameters for BLUSIM
+                  *********************
+
+START OF PARAMETERS:
+Muestras.dat                     -file with data
+1  2  3  4  0                    -columns for X,Y,Z,var,wt
+-1.0e21   1.0e21                 -trimming limits
+1                                -transform the data (0=no, 1=yes)
+blusim-small.trn                 -file for output trans table
+0                                -consider ref. dist (0=no, 1=yes)
+histsmth-small.out               -file with ref. dist distribution
+1  2                             -columns for vr and wt
+0.0     7.5                      -zmin,zmax(tail extrapolation)
+1       0.0                      -lower tail option, parameter
+1       7.5                      -upper tail option, parameter
+0                                -debugging level: 0,1,2,3
+blusim.small.dbg                 -file for debugging output
+blusim-small.out                 -file for kriged output
+100                              -number of realizations to generate
+40   5.0    10.0                 -nx,xmn,xsiz - Pannel Size
+60   5.0    10.0                 -ny,ymn,ysiz
+12   6.0    12.0                 -nz,zmn,zsiz
+4   4   4                        -nbx,nby,nbz- SMUs per Pannel
+3    3   3                       -x,y and z block discretization
+5                                -number of cutoffs for reporting
+0.2 0.5 0.8 1.0 2.0              -cutoffs
+9784585                          -random number seed
+4    8                           -min, max data for kriging
+0                                -max per octant (0-> not used)
+100.0 100.0 60.0                 -maximum search radii
+0.0   0.0   0.0                  -angles for search ellipsoid
+1    0.2                         -nst, nugget effect
+1    0.8  0.0   0.0   0.0        -it,cc,ang1,ang2,ang3
+100.0 100.0 50.0                 -a_hmax, a_hmin, a_vert
